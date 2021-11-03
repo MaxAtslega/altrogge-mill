@@ -1,0 +1,34 @@
+import type { AppProps } from "next/app"
+import { AnimatePresence } from "framer-motion"
+import Container from "@mui/material/Container"
+import { ThemeProvider } from "@mui/material/styles"
+import Footer from "@components/Footer"
+import { CacheProvider, EmotionCache } from "@emotion/react"
+import createEmotionCache from "@utils/createEmotionCache"
+import theme from "@styles/theme"
+import { CssBaseline } from "@mui/material"
+import Header from "@components/Header"
+
+const clientSideEmotionCache = createEmotionCache()
+
+interface MyAppProps extends AppProps {
+  // eslint-disable-next-line react/require-default-props
+  emotionCache?: EmotionCache
+}
+
+function MyApp({ Component, emotionCache = clientSideEmotionCache, pageProps }: MyAppProps) {
+  return (
+    <CacheProvider value={emotionCache}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Header />
+        <AnimatePresence exitBeforeEnter initial>
+          <Component {...pageProps} />
+        </AnimatePresence>
+        <Footer />
+      </ThemeProvider>
+    </CacheProvider>
+  )
+}
+
+export default MyApp
