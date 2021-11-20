@@ -1,6 +1,5 @@
 import type { AppProps } from "next/app"
 import { AnimatePresence } from "framer-motion"
-import Container from "@mui/material/Container"
 import { ThemeProvider } from "@mui/material/styles"
 import Footer from "@components/Footer"
 import { CacheProvider, EmotionCache } from "@emotion/react"

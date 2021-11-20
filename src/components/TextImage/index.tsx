@@ -1,7 +1,6 @@
-import { Typography } from "@mui/material"
 import { Container, ImageContainer, TextContainer } from "@components/TextImage/textImage.style"
 
-export default ({ children, imageRight = false }: { children: any, imageRight: boolean }) => (
+export default ({ children, imageRight = false }: { children: any; imageRight: boolean }) => (
   <Container>
     {!imageRight && (
       <ImageContainer>

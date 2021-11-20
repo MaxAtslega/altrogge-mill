@@ -1,4 +1,4 @@
-import { Typography, Container, Box, List, ListItem, Paper } from "@mui/material"
+import { Typography } from "@mui/material"
 import {
   Header as HeaderStyled,
   Navigator,
@@ -20,7 +20,7 @@ export default function Header() {
           >
             Mühle Altrogge
           </Typography>
-          <Link href="/quiz">
+          <Link passHref href="/quiz">
             <LinkButton>Quiz</LinkButton>
           </Link>
         </NavbarContainer>
