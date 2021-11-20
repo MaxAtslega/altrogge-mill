@@ -29,5 +29,8 @@ jobs:
       - name: Docker Build & Push
         uses: docker/build-push-action@v1
         with:
-          push: true
-          tags: pcr.atslega.network/muehle-altrogge:latest
+          registry: pcr.atslega.network
+          username: ${{ secrets.REGISTRY_USERNAME }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+          repository: pcr.atslega.network/muehle-altrogge
+          tags: latest
