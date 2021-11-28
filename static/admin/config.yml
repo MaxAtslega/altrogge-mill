@@ -1,0 +1,77 @@
+backend:
+  name: github
+  repo: MaxAtslega/MuehleAltrogge
+  branch: issue/1
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - label: "Geschichte"
+    name: "historical"
+    folder: "content/historical"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+        label: "Main Image",
+        name: "mainImage",
+        widget: "object",
+        fields:
+          [
+            { label: "Image", name: "image", widget: "image" },
+            { label: "Image Description", name: "imageAlt", widget: "string" },
+          ],
+      }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Technik"
+    name: "technic"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    folder: "content/technic"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+        label: "Main Image",
+        name: "mainImage",
+        widget: "object",
+        fields:
+          [
+            { label: "Image", name: "image", widget: "image" },
+            { label: "Image Description", name: "imageAlt", widget: "string" },
+          ],
+      }
+      - { label: "Body", name: "body", widget: "text" }
+  - label: "Umwelteinflüsse"
+    name: "influences"
+    create: true
+    folder: "content/influences"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+        label: "Main Image",
+        name: "mainImage",
+        widget: "object",
+        fields:
+          [
+            { label: "Image", name: "image", widget: "image" },
+            { label: "Image Description", name: "imageAlt", widget: "text" },
+          ],
+      }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Gallery"
+    name: "gallery"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    folder: "content/gallery"
+    media_folder: ''
+    public_folder: ''
+    create: true
+    fields:
+      - { label: "Title", name: "imageAlt", widget: "string" }
+      - {
+        label: "Main Image",
+        name: "mainImage",
+        widget: "image",
+      }
