@@ -1,7 +1,5 @@
 import {styled} from "@mui/system"
-// @ts-ignore
 import HeroImage from "@images/hero.png"
-// @ts-ignore
 import HeaderWave from "@images/header-wave.svg"
 import {Link} from "gatsby";
 
@@ -18,13 +16,12 @@ export const Header =  styled("header", {
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center",
       backgroundSize: "cover",
+      "@media only screen and (max-width:620px)": {
+        height: "65vh",
+      },
     }),
     display: "block",
     position: "relative",
-
-    "@media only screen and (max-width:620px)": {
-      height: "65vh",
-    },
   }));
 
 

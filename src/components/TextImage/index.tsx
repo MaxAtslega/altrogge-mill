@@ -1,19 +1,21 @@
 import React from "react"
 import { Container, ImageContainer, TextContainer } from "@components/TextImage/textImage.style"
 
-export default ({ children, imageRight = false }: { children: any; imageRight: boolean }) => (
+const TextImage = ({ children, imageRight = false, imageSRC, onClickImage }: { children: any; imageRight?: boolean, imageSRC: any, onClickImage?: any }) => (
   <Container>
     {!imageRight && (
-      <ImageContainer>
-        <img src="https://via.placeholder.com/1920x1080" alt={"Placeholder"} />
+      <ImageContainer onClick={onClickImage}>
+        <img src={imageSRC} alt={"Placeholder"} />
       </ImageContainer>
     )}
     <TextContainer>{children}</TextContainer>
 
     {imageRight && (
-      <ImageContainer>
-        <img src="https://via.placeholder.com/1920x1080" alt={"Placeholder"} />
+      <ImageContainer onClick={onClickImage}>
+        <img src={imageSRC} alt={"Placeholder"} />
       </ImageContainer>
     )}
   </Container>
 )
+
+export default TextImage

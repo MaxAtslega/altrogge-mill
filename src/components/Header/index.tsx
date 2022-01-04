@@ -7,6 +7,7 @@ import {
   NavbarContainer,
   LinkButton,
 } from "@components/Header/header.style"
+import {Link} from "gatsby";
 
 
 export default function Header({hero}: {hero: boolean}) {
@@ -14,13 +15,16 @@ export default function Header({hero}: {hero: boolean}) {
     <HeaderStyled hero={hero}>
       <Navigator>
         <NavbarContainer>
-          <Typography
-            sx={{ fontFamily: "'Gluten', cursive", fontSize: "30px", fontWeight: 600 }}
-            color={"#ffffff"}
-            variant="h1"
-          >
-            Mühle Altrogge
-          </Typography>
+          <Link to={"/"} style={{textDecoration: "none"}}>
+            <Typography
+              sx={{ fontFamily: "'Gluten', cursive", fontSize: "30px", fontWeight: 600 }}
+              color={"#ffffff"}
+              variant="h1"
+            >
+              Mühle Altrogge
+            </Typography>
+          </Link>
+
           <LinkButton to={"/quiz"}>Quiz</LinkButton>
 
         </NavbarContainer>
@@ -37,6 +41,7 @@ export default function Header({hero}: {hero: boolean}) {
 
     </HeaderStyled>
   )
+
 }
 
 Header.defaultProps = {
