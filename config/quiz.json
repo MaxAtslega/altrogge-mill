@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Frage 1: In welchem Jahr brannte die herrschaftliche Mühle?",
+    "video": "",
     "answers": [
       "1920",
       "1862",
@@ -12,24 +13,60 @@
   },
   {
     "id": 2,
-    "title": "Frage 2: In welchem Jahr brannte die herrschaftliche Mühle?",
+    "title": "Frage 2: Welche Turbine wurde im Wasserkraftwerk der alten Mühle verwendet?",
+    "video": "",
     "answers": [
-      "1920",
-      "1862",
-      "1993",
-      "2004"
+      "Peltonturbine",
+      "Propellerturbine",
+      "Durchström Turbine",
+      "Kaplan-Turbine"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 3,
+    "title": "Frage 3: Wie wird beim Pumpenspeicherwerk Strom erzeugt?",
+    "video": "",
+    "answers": [
+      "Man lässt das Wasser was Hochgepumpt wurde ins untere Becken ab.",
+      "Man setzt das Wasser was im unteren Becken in Bewegung das Wellen entstehen.",
+      "Es werden selbstgemachte Gefälle verwendet damit die Strömung vom Wasser genutzt werden kann.",
+      "So ein Kraftwerk existiert gar nicht"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 4,
+    "video": "",
+    "title": "Frage 4: Hat die Mühle etwas mit der Qualität der Werre gemacht?",
+    "answers": [
+      "Nein.",
+      "Sie hat schädliche Abfallprodukte in die Werre geleitet.",
+      "Sie hat für einen gewissen Wasserstau gesorgt."
     ],
     "answer": 2
   },
   {
-    "id": 3,
-    "title": "Frage 3: In welchem Jahr brannte die herrschaftliche Mühle?",
+    "id": 5,
+    "video": "",
+    "title": "Frage 4: Wann wurde die neue Mühle von Altrogge übernommen?",
     "answers": [
+      "1899",
+      "1919",
       "1920",
-      "1862",
-      "1993",
-      "2004"
+      "1935"
     ],
     "answer": 2
+  },
+  {
+    "id": 6,
+    "video": "",
+    "title": "Frage 4: Was hat die Mühle Altrogge als letztes produziert.",
+    "answers": [
+      "Mehl",
+      "Spezialfutter für Labortiere",
+      "Fleisch"
+    ],
+    "answer": 1
   }
 ]

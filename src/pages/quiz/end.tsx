@@ -7,6 +7,7 @@ import MapVertical from "@images/map_vertical.png";
 import MapHorizontal from "@images/map_horizontal.png";
 import SEO from "@components/seo";
 import MotionDiv from "@components/MotionDiv";
+import quiz from "../../../config/quiz.json";
 
 const QuizEnd = (props: any) => {
   const numberOfWrongAnswers: number = props.location.state?.numberOfWrongAnswers ? props.location.state.numberOfWrongAnswers : 0;
@@ -25,7 +26,7 @@ const QuizEnd = (props: any) => {
                 <Typography variant="h1" sx={{fontFamily: "'Gluten', cursive"}}>Glückwunsch!</Typography>
                 <div>
                   <Typography>
-                    Du hast es geschafft! Du hast {numberOfWrongAnswers} von 10 Fragen falsch beantwortet! :)
+                    Du hast es geschafft! Du hast {numberOfWrongAnswers} von {quiz.length} Fragen falsch beantwortet! :)
                   </Typography>
                   <Link style={{textDecoration: "none"}} to={"/quiz"}><Button sx={{fontFamily: "'Gluten', cursive", marginTop: "10px"}} variant="contained">Nochmal Starten</Button></Link>
                 </div>
