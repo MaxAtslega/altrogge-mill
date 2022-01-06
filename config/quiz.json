@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Frage 1: In welchem Jahr brannte die herrschaftliche Mühle?",
+    "answers": [
+      "1920",
+      "1862",
+      "1993",
+      "2004"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 2,
+    "title": "Frage 2: In welchem Jahr brannte die herrschaftliche Mühle?",
+    "answers": [
+      "1920",
+      "1862",
+      "1993",
+      "2004"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 3,
+    "title": "Frage 3: In welchem Jahr brannte die herrschaftliche Mühle?",
+    "answers": [
+      "1920",
+      "1862",
+      "1993",
+      "2004"
+    ],
+    "answer": 2
+  }
+]

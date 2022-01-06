@@ -1,26 +1,30 @@
 import { styled } from "@mui/system"
+import {Box} from "@mui/material";
 
 export const Container = styled("div")({
   display: "flex",
   flexWrap: "wrap",
   margin: "0 auto",
 
-  "@media screen and (max-width: 850px)": {
+  "@media screen and (max-width: 1000px)": {
     flexFlow: "column",
   },
 })
 
 export const ImageContainer = styled("div")({
-  margin: "15px",
-  padding: "50px",
-  maxWidth: "1280px",
+  padding: "20px",
+  maxWidth: "450px",
+  margin: "30px 0px",
   img: {
-    width: "480px",
+    maxWidth: "100%",
+    height: "auto",
+    display: "block",
   },
-
-  "@media screen and (max-width: 850px)": {
+  "@media screen and (max-width: 1000px)": {
     padding: 0,
     order: 1,
+    margin: "15px",
+    maxWidth: "100%",
     img: {
       width: "100%",
     },
@@ -28,14 +32,15 @@ export const ImageContainer = styled("div")({
 })
 
 export const TextContainer = styled("div")({
-  margin: "15px",
   textAlign: "left",
-  padding: "50px",
-  maxWidth: "1280px",
+  padding: "20px",
+  margin: "30px 0px",
   flexBasis: 0,
   flexGrow: 1,
-  "@media screen and (max-width: 850px)": {
+  "@media screen and (max-width: 1000px)": {
     padding: 0,
+    textAlign: "center",
     order: 2,
   },
 })
+

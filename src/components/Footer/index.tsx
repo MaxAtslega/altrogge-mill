@@ -1,4 +1,7 @@
+import React from "react"
 import { Typography, Box, Link } from "@mui/material"
+import { Link as LinkGatsby } from "gatsby"
+import { FooterContainer } from "@components/Footer/Footer.style"
 
 export default function Footer() {
   return (
@@ -14,18 +17,20 @@ export default function Footer() {
         />
       </svg>
       <Box sx={{ pt: 2, pb: 2, pr: "20px", pl: "20px", background: "#7DBA67" }}>
-        <Box color={"#ffffff"} sx={{ display: "flex", background: "#7DBA67", justifyContent: "space-between" }}>
-          <Box sx={{ display: "flex", alignItems: "left", textAlign: "left" }}>
+        <FooterContainer color={"#ffffff"}>
+          <Box sx={{ display: "flex", justifyContent: "center", textAlign: "left" }}>
             <Typography sx={{ paddingRight: "20px" }}>
-              <Link color={"#ffffff"} sx={{ "&:hover": { color: "#4b4b4b" } }} href="/quiz">
-                Quiz
-              </Link>
+              <LinkGatsby to={"/quiz"}>
+                <Link color={"#ffffff"} sx={{ "&:hover": { color: "#4b4b4b" } }}>
+                  Quiz
+                </Link>
+              </LinkGatsby>
             </Typography>
             <Typography>
               <Link
                 color={"#ffffff"}
                 sx={{ "&:hover": { color: "#4b4b4b" } }}
-                href="https://github.com/MaxAtslega/muehle-altrogge"
+                href="https://github.com/MaxAtslega/MuehleAltrogge"
               >
                 Source Code
               </Link>
@@ -37,7 +42,7 @@ export default function Footer() {
               Gewässerlehrpfad Lage
             </Link>
           </span>
-        </Box>
+        </FooterContainer>
       </Box>
     </footer>
   )

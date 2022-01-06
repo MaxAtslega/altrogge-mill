@@ -1,23 +1,30 @@
-import { styled } from "@mui/system"
-// @ts-ignore
+import {styled} from "@mui/system"
 import HeroImage from "@images/hero.png"
-// @ts-ignore
 import HeaderWave from "@images/header-wave.svg"
+import {Link} from "gatsby";
 
-export const Header = styled("header")({
-  width: "100%",
-  height: "80vh",
-  backgroundImage: `url(${HeroImage})`,
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center",
-  backgroundSize: "cover",
-  display: "block",
-  position: "relative",
 
-  "@media only screen and (max-width:620px)": {
-    height: "65vh",
-  },
-})
+
+export const Header =  styled("header", {
+  shouldForwardProp: (prop) => prop !== "hero",
+})<{ hero?: boolean }>(({ hero }) => ({
+
+    width: "100%",
+    ...(hero && {
+      height: "80vh",
+      backgroundImage: `url(${HeroImage})`,
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      "@media only screen and (max-width:620px)": {
+        height: "65vh",
+      },
+    }),
+    display: "block",
+    position: "relative",
+  }));
+
+
 
 export const Navigator = styled("nav")({
   backgroundImage: `url(${HeaderWave})`,
@@ -52,7 +59,7 @@ export const NavbarContainer = styled("div")({
   },
 })
 
-export const LinkButton = styled("span")({
+export const LinkButton = styled(Link)({
   fontSize: "17px",
   padding: "6px 40px",
   background: "#5BBADA",
