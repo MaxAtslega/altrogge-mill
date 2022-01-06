@@ -17,9 +17,9 @@ exports.createPages = async ({ actions }) => {
   const quizTemplate = path.resolve(`src/templates/quiz/index.tsx`)
   quiz.forEach((node, index) => {
     createPage({
-      path: `/quiz/${node.id}`,
+      path: `/quiz/${index+1}`,
       component: quizTemplate,
-      context: {...node, lastQuestion: (quiz.length-1) === index},
+      context: {...node, id: index+1, lastQuestion: (quiz.length-1) === index},
     })
   })
 }

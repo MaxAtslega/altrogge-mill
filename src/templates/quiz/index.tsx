@@ -33,12 +33,12 @@ const QuizByID = (props: any) => {
 
     setSelectedValue(event.target.value);
   }
-
   const handleAnswerButton = (event) => {
     event.preventDefault()
 
     if(isAnswered){
       navigate(quiz.lastQuestion ? "/quiz/end" : "/quiz/"+(quiz.id+1), {
+
         state: { numberOfWrongAnswers: selectedValue === "answer"+quiz.answer ? numberOfWrongAnswers : numberOfWrongAnswers + 1},
       })
     }else{

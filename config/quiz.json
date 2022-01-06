@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "title": "Frage 1: In welchem Jahr brannte die herrschaftliche Mühle?",
     "video": "",
     "answers": [
@@ -12,7 +11,6 @@
     "answer": 1
   },
   {
-    "id": 2,
     "title": "Frage 2: Welche Turbine wurde im Wasserkraftwerk der alten Mühle verwendet?",
     "video": "",
     "answers": [
@@ -24,7 +22,6 @@
     "answer": 3
   },
   {
-    "id": 3,
     "title": "Frage 3: Wie wird beim Pumpenspeicherwerk Strom erzeugt?",
     "video": "",
     "answers": [
@@ -36,7 +33,6 @@
     "answer": 0
   },
   {
-    "id": 4,
     "video": "",
     "title": "Frage 4: Hat die Mühle etwas mit der Qualität der Werre gemacht?",
     "answers": [
@@ -47,9 +43,8 @@
     "answer": 2
   },
   {
-    "id": 5,
     "video": "",
-    "title": "Frage 4: Wann wurde die neue Mühle von Altrogge übernommen?",
+    "title": "Frage 5: Wann wurde die neue Mühle von Altrogge übernommen?",
     "answers": [
       "1899",
       "1919",
@@ -59,9 +54,8 @@
     "answer": 2
   },
   {
-    "id": 6,
     "video": "",
-    "title": "Frage 4: Was hat die Mühle Altrogge als letztes produziert.",
+    "title": "Frage 6: Was hat die Mühle Altrogge als letztes produziert.",
     "answers": [
       "Mehl",
       "Spezialfutter für Labortiere",
