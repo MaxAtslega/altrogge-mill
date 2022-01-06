@@ -234,7 +234,7 @@ const IndexPage = () => {
           </Typography>
           <img src={HeadImage} alt={"Placeholder"}/>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Du hast die {getHide.which} Mütze von Lennard den Lachs gefunden! Der {getHide.which} Buchstabe ist: {getHide.letter}<br/><br/>Wenn du alle 6 Buchstaben gefunden hast, gehe zum Quiz und überprüfe dein Lösungswort.
+            Du hast die {getHide.which} Mütze von Lennard dem Lachs gefunden! Der {getHide.which} Buchstabe ist: {getHide.letter}<br/><br/>Wenn du alle 6 Buchstaben gefunden hast, gehe zum Quiz und überprüfe dein Lösungswort.
           </Typography>
         </StyledModal>
       </Modal>
