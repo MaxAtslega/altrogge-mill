@@ -5,7 +5,7 @@ import {
   Grid,
   ImageListItem,
   ImageListItemBar,
-  IconButton, Box, Modal
+  IconButton, Box, Modal, Button, Container
 } from "@mui/material"
 
 import Section from "@components/Section"
@@ -28,49 +28,49 @@ import Technology3Picture from "@images/pictures/technology3.png"
 import Environment1Picture from "@images/pictures/environment1.png"
 import Environment2Picture from "@images/pictures/environment2.png"
 
+import Laufwasserkraftwerk from "@images/Laufwasserkraftwerk.png"
+import Pumpenspeicherkraftwerk from "@images/Pumpenspeicherkraftwerk.png"
+import Speicherkraftwerk from "@images/Speicherkraftwerk.png"
+
+
+import Gallery1 from "@images/gallery/1.png"
+import Gallery2 from "@images/gallery/2.png"
+import Gallery3 from "@images/gallery/3.png"
+import Gallery4 from "@images/gallery/4.png"
+import Gallery5 from "@images/gallery/5.png"
+import Gallery6 from "@images/gallery/6.png"
+
+
 import HeadImage from "@images/head.png"
 
 import MotionDiv from "@components/MotionDiv";
 import {styled} from "@mui/system";
+import {navigate} from "gatsby";
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-    title: 'Breakfast',
-    author: '@bkristastucchio',
-    rows: 2,
-    cols: 2,
-    featured: true,
+    img: Gallery1,
+    title: 'Rechen 1',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-    title: 'Burger',
-    author: '@rollelflex_graphy726',
+    img: Gallery2,
+    title: 'Das Silo',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-    title: 'Camera',
-    author: '@helloimnik',
+    img: Gallery3,
+    title: 'Erklärung der Technik',
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-    title: 'Coffee',
-    author: '@nolanissac',
-    cols: 2,
+    img: Gallery4,
+    title: 'Schwungrad',
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-    title: 'Hats',
-    author: '@hjrc33',
-    cols: 2,
+    img: Gallery5,
+    title: 'Generator + Schwungrad',
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-    title: 'Honey',
-    author: '@arwinneil',
-    rows: 2,
-    cols: 2,
-    featured: true,
+    img: Gallery6,
+    title: 'Rechen 2',
   },
 ];
 
@@ -91,6 +91,14 @@ export const StyledModal = styled(Box)({
   },
 });
 
+export const QuizButton = styled(Button)({
+  display: "none",
+  "@media screen and (max-width: 600px)": {
+    display: "block",
+    width: "100%"
+  },
+});
+
 const IndexPage = () => {
   const [getHide, setHide] = React.useState({which: null, letter: null});
   const handleOpen = (which, letter) => setHide({which, letter});
@@ -105,6 +113,9 @@ const IndexPage = () => {
             <img style={{display: "block", maxWidth: "100%", height: "auto", padding: "20px"}} src={Lennard} alt={"Placeholder"} />
           </Grid>
           <Grid item xs={12} sm={8}>
+            <Container>
+              <QuizButton variant="contained" onClick={() => navigate('/quiz')}>Zum Quiz</QuizButton>
+            </Container>
             <Section id={"about_me"}>
               <Typography variant="h1">Die Geschichte</Typography>
               <Divider />
@@ -158,23 +169,23 @@ const IndexPage = () => {
         <Section id={"hydroelectric-power-station"}>
           <Typography variant="h1">Wasserkraftwerke im Vergleich</Typography>
           <Divider />
-          <TextImage onClickImage={() => handleOpen("vierte", "s")} imageSRC={"https://via.placeholder.com/1920x1080"} imageRight={false}>
+          <TextImage onClickImage={() => handleOpen("vierte", "s")} imageSRC={Speicherkraftwerk} imageRight={false}>
             <Typography variant="h2">Speicherkraftwerk</Typography>
             <Typography>
               Wenn Strom aus dem Speicherkraftwerk erzeugt werden soll, lässt man das Wasser aus dem Speicherbecken ab und führt es durch ein tiefergelegenes Turbinenbecken. Über die Bewegung
               der Turbine entsteht dann Strom.
             </Typography>
           </TextImage>
-          <TextImage imageSRC={"https://via.placeholder.com/1920x1080"} imageRight>
+          <TextImage imageSRC={Laufwasserkraftwerk} imageRight>
             <Typography variant="h2">Laufwasserkraftwerk</Typography>
             <Typography>
               Das Laufwasserkraftwerk nutzt künzliche Gefälle von den Wasserströmen, um so Strom zu erzeugen. Das Wasser fließt mit einer hohen Geschwindigkeit durch die Turbiene des Wasserkraftwerks. Sie bringt den Generator zum Laufen, weshalb Strom erzeugt wird.
             </Typography>
           </TextImage>
-          <TextImage imageSRC={"https://via.placeholder.com/1920x1080"}>
-            <Typography variant="h2">Pumpenspeicherwerke</Typography>
+          <TextImage imageSRC={Pumpenspeicherkraftwerk}>
+            <Typography variant="h2">Pumpenspeicherkraftwerk</Typography>
             <Typography>
-              Das Laufwasserkraftwerk nutzt künzliche Gefälle von den Wasserströmen, um so Strom zu erzeugen. Das Wasser fließt mit einer hohen Geschwindigkeit durch die Turbiene des Wasserkraftwerks. Sie bringt den Generator zum Laufen, weshalb Strom erzeugt wird.
+              Bei einem Pumpenspeicherkraftwerk wird mithilfe von elektrischer Energie Wasser in das Oberebecken vom Kraftwerk gepumt. Damit man diese Energie zurück gewinnen kann, lässt man mit der hilfe einer Turbine das Wasser in das unterer Becken abfließen. Sobald das Wasser runter fließt wird die Turbine angetrieben und es entsteht elektrischer Strom. Bei bedarf kann das Pumpenkraftwerk sehr schnell Energie erzeugen, weil es keinen solangen Vorlauf braucht.
             </Typography>
           </TextImage>
         </Section>
@@ -208,7 +219,6 @@ const IndexPage = () => {
                 />
                 <ImageListItemBar
                   title={item.title}
-                  subtitle={item.author}
                   actionIcon={
                     <IconButton
                       sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
@@ -234,7 +244,7 @@ const IndexPage = () => {
           </Typography>
           <img src={HeadImage} alt={"Placeholder"}/>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Du hast die {getHide.which} Mütze von Lennard dem Lachs gefunden! Der {getHide.which} Buchstabe ist: {getHide.letter}<br/><br/>Wenn du alle 6 Buchstaben gefunden hast, gehe zum Quiz und überprüfe dein Lösungswort.
+            Du hast die {getHide.which} Mütze von Lennard Lachs gefunden! Der {getHide.which} Buchstabe lautet: {getHide.letter}<br/><br/>Wenn du alle 6 Buchstaben gefunden hast, gehe zum Quiz und überprüfe dein Lösungswort.
           </Typography>
         </StyledModal>
       </Modal>

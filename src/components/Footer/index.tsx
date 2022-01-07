@@ -19,13 +19,14 @@ export default function Footer() {
       <Box sx={{ pt: 2, pb: 2, pr: "20px", pl: "20px", background: "#7DBA67" }}>
         <FooterContainer color={"#ffffff"}>
           <Box sx={{ display: "flex", justifyContent: "center", textAlign: "left" }}>
-            <Typography sx={{ paddingRight: "20px" }}>
-              <LinkGatsby to={"/quiz"}>
-                <Link color={"#ffffff"} sx={{ "&:hover": { color: "#4b4b4b" } }}>
-                  Quiz
-                </Link>
-              </LinkGatsby>
-            </Typography>
+            <Box sx={{ paddingRight: "20px" }}>
+                <LinkGatsby style={{textDecoration: "none"}} to={"/quiz"}>
+                  <Typography  color={"#ffffff"} sx={{textDecoration: "underline", "&:hover": { color: "#4b4b4b"} }}>
+
+                    Quiz
+                  </Typography>
+                </LinkGatsby>
+            </Box>
             <Typography>
               <Link
                 color={"#ffffff"}

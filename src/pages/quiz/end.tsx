@@ -26,7 +26,7 @@ const QuizEnd = (props: any) => {
                 <Typography variant="h1" sx={{fontFamily: "'Gluten', cursive"}}>Glückwunsch!</Typography>
                 <div>
                   <Typography>
-                    Du hast es geschafft! Du hast {numberOfWrongAnswers} von {quiz.length} Fragen falsch beantwortet! :)
+                    Du hast es geschafft! Du hast {quiz.length-numberOfWrongAnswers} von {quiz.length} Fragen richtig beantwortet! :)
                   </Typography>
                   <Link style={{textDecoration: "none"}} to={"/quiz"}><Button sx={{fontFamily: "'Gluten', cursive", marginTop: "10px"}} variant="contained">Nochmal Starten</Button></Link>
                 </div>

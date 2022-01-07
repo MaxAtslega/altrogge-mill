@@ -57,7 +57,7 @@ const QuizByID = (props: any) => {
             <Grid item xs={12} sm={8}>
               <MotionDiv>
                 <Container>
-                  <TextVideo video={"https://www.youtube-nocookie.com/embed/Sl9VWnCpB80"}>
+                  <TextVideo video={quiz.video}>
                     <Typography variant="h2">{quiz.title}</Typography>
                     <FormControl component="fieldset">
                       <RadioGroup

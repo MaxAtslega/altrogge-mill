@@ -1,7 +1,7 @@
 [
   {
     "title": "Frage 1: In welchem Jahr brannte die herrschaftliche Mühle?",
-    "video": "",
+    "video": "https://www.youtube.com/embed/vxWaN_UJMGo",
     "answers": [
       "1920",
       "1862",
@@ -11,8 +11,19 @@
     "answer": 1
   },
   {
-    "title": "Frage 2: Welche Turbine wurde im Wasserkraftwerk der alten Mühle verwendet?",
-    "video": "",
+    "video": "https://www.youtube.com/embed/q8h5Gvpw3ao",
+    "title": "Frage 2: Wer kaufte die neue Mühle?",
+    "answers": [
+      "Fürst Leopold der 4.",
+      "Die Familie Quaditz",
+      "Leopold und Luis Altrogge",
+      "Kaufmann Duvel und Müller Altenbernd"
+    ],
+    "answer": 2
+  },
+  {
+    "title": "Frage 3: Mit welcher Turbine wird derzeit Strom erzeugt?",
+    "video": "https://www.youtube.com/embed/cQoXqPjOvuM",
     "answers": [
       "Peltonturbine",
       "Propellerturbine",
@@ -22,8 +33,8 @@
     "answer": 3
   },
   {
-    "title": "Frage 3: Wie wird beim Pumpenspeicherwerk Strom erzeugt?",
-    "video": "",
+    "title": "Frage 4: Wie wird beim Pumpenspeicherwerk Strom erzeugt?",
+    "video": "https://www.youtube.com/embed/dfSCaGWXk6w",
     "answers": [
       "Man lässt das Wasser was Hochgepumpt wurde ins untere Becken ab.",
       "Man setzt das Wasser was im unteren Becken in Bewegung das Wellen entstehen.",
@@ -33,8 +44,8 @@
     "answer": 0
   },
   {
-    "video": "",
-    "title": "Frage 4: Hat die Mühle etwas mit der Qualität der Werre gemacht?",
+    "video": "https://www.youtube.com/embed/xxc764zNf_s",
+    "title": "Frage 5: Hat die Mühle etwas mit der Qualität der Werre gemacht?",
     "answers": [
       "Nein.",
       "Sie hat schädliche Abfallprodukte in die Werre geleitet.",
@@ -43,8 +54,8 @@
     "answer": 2
   },
   {
-    "video": "",
-    "title": "Frage 5: Wann wurde die neue Mühle von Altrogge übernommen?",
+    "video": "https://www.youtube.com/embed/JxacJNlsBh8",
+    "title": "Frage 6: Wann wurde die neue Mühle von Altrogge übernommen?",
     "answers": [
       "1899",
       "1919",
@@ -54,8 +65,8 @@
     "answer": 2
   },
   {
-    "video": "",
-    "title": "Frage 6: Was hat die Mühle Altrogge als letztes produziert.",
+    "video": "https://www.youtube.com/embed/uSeYTBQxk08",
+    "title": "Frage 7: Was hat die Mühle Altrogge als letztes produziert.",
     "answers": [
       "Mehl",
       "Spezialfutter für Labortiere",

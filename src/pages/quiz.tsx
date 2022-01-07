@@ -19,7 +19,7 @@ const Quiz = () => {
 
   const handleCheck = () => {
     if(getCheckValue.toUpperCase() === "WASSER") {
-      setMessage({correct: "Du hast alle Mützen von Lennard den Lachs gefunden und du hast die Suche erfolgreich absolviert. Das Wasser hat das Mühlrad angetrieben und somit könnten die Maschinen für die Produktion produzieren.", wrong: null})
+      setMessage({correct: "Du hast alle Mützen von Lennard Lachs gefunden und du hast die Suche erfolgreich absolviert. Das Wasser hat das Mühlrad angetrieben und somit könnten die Maschinen für die Produktion produzieren.", wrong: null})
     }else{
       setMessage({
         correct: null,
@@ -38,11 +38,11 @@ const Quiz = () => {
         <Grid item xs={12} sm={8}>
           <MotionDiv>
             <Container>
-              <TextVideo video={"https://www.youtube-nocookie.com/embed/Sl9VWnCpB80"}>
+              <TextVideo video={"https://www.youtube.com/embed/Awr1AwdkTUY"}>
                 <Typography variant="h2">Willkommen beim Quiz!</Typography>
                 <div>
                   <Typography>
-                    Wir wünschen euch herzlich Willkommen beim Quiz! Hier kannst du mit spannenden Ankreuzfragen dein Wissen über die Mühle Altrogge überprüfen. Lennard wird dich immer begleiten.
+                    Wir wünschen euch herzlich Willkommen beim Quiz! Hier kannst du mit spannenden Ankreuzfragen dein Wissen über die Mühle Altrogge überprüfen. Lennard Lachs wird dich immer begleiten.
                     <br /> Bonus: Lennard hat seine Mützensammlung verloren. Finde seine 6 Mützen auf der Webseite und verbinde sie zu einem Lösungswort.
                   </Typography>
                   <Link style={{textDecoration: "none"}} to={"/quiz/1"}><Button style={{ marginTop: "10px"}} variant="contained">Start</Button></Link>
