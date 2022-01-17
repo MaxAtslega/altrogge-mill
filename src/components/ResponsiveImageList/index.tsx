@@ -1,38 +1,25 @@
-import React, {useEffect, useState} from "react"
-import {ImageList} from "@mui/material";
-
+import React from "react"
+import {styled} from "@mui/system";
 
 export default function ResponsiveImageList({ children }: { children: any }) {
-  const breakpoints = {
-    xs: 0,
-    sm: 600,
-    md: 960,
-    lg: 1280,
-    xl: 1920
-  }
 
-  const getColumns = (width) => {
-    if (width < breakpoints.sm) {
-      return 2
-    } else{
-      return 3
-    }
-  }
-
-  const [columns, setColumns] = useState(typeof window !== "undefined" ? getColumns(window.innerWidth): 2)
-  const updateDimensions = () => {
-    setColumns(getColumns(window.innerWidth))
-  }
-
-  useEffect(() => {
-    window.addEventListener("resize", updateDimensions);
-    return () => window.removeEventListener("resize", updateDimensions);
-  }, []);
+  const ImageGalleryList = styled('ul')(({ theme }) => ({
+    display: 'grid',
+    padding: 0,
+    margin: theme.spacing(0, 4),
+    gap: 8,
+    [theme.breakpoints.up('xs')]: {
+      gridTemplateColumns: 'repeat(2, 1fr)'
+    },
+    [theme.breakpoints.up('md')]: {
+      gridTemplateColumns: 'repeat(3, 1fr)'
+    },
+  }));
 
   return (
-    <ImageList cols={columns}>
+    <ImageGalleryList>
       { children }
-    </ImageList>
+    </ImageGalleryList>
   )
 }
 

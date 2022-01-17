@@ -63,6 +63,7 @@ const itemData = [
   {
     img: Gallery4,
     title: 'Schwungrad',
+    lennard: {which: "letzte", letter: "r"}
   },
   {
     img: Gallery5,
@@ -122,20 +123,17 @@ const IndexPage = () => {
               <TextImage imageSRC={History1Picture}>
                 <Typography variant="h2">Die herrschaftliche Mühle</Typography>
                 <Typography>
-                  Die alte herrschaftliche Mühle war eine Vorgänger Mühle, von der von der neuen Mühle Altrogge und Sie blieb im Eigentum der jeweiligen Regenten, bis sie 1862 abbrannte. Daraufhin wurde eine neue Mühle südlich der Langen Straße erbaut und kam 1920 in den Besitz der Familie Altrogge. Die alte herrschaftliche Mühle wurde zu einem Wohnhaus wieder aufgebaut.
-                </Typography>
+                  Die alte herrschaftliche Mühle war eine Vorgängerin der heutigen Mühle Altrogge. Sie war im Eigentum der jeweiligen lippischen Regenten, bis sie 1862 abbrannte. Daraufhin wurde eine neue Mühle südlich der Langen Straße erbaut und kam 1920 in den Besitz der Familie Altrogge. Die alte herrschaftliche Mühle wurde zu einem Wohnhaus wieder aufgebaut.                 </Typography>
               </TextImage>
               <TextImage imageSRC={History2Picture} imageRight>
                 <Typography variant="h2">Die Mühle Altrogge</Typography>
                 <Typography>
-                  Nach dem Brand der alten herrschaftlichen Mühle wurde die jetzige bekannte Mühle Altrogge aufgebaut. Die Mühle wurde erst 1872 von Familie Altrogge übernommen. Davor gehörte die Mühle den Fürsten von Lippe. Wegen eines Technischen Defektes ist die Mühle Altrogge im Jahr 1993 abgebrannt. Danach wurde die Mühle erneut aufgebaut, bis die Produktion 2012 beendet wurde. Heute produzieren zwei Kapla-Turbinen etwa 5 bis 10kw an Strom.
-                </Typography>
+                  Nach dem Brand der alten herrschaftlichen Mühle wurde die jetzige Mühle Altrogge an der Werre vom lippischen Fürsten aufgebaut und 1872 zunächst mit einem Pachtvertrag von der Familie Altrogge übernommen.  Einige Jahre später konnte die Mühle dann von der Familie gekauft werden. Wegen eines technischen Defektes brannte die Mühle Altrogge im Jahr 1993 teilweise ab. Danach wurde die Mühle erneut aufgebaut, bis die Mehl- bzw. Futtermittelproduktion 2012 beendet wurde. Heute produzieren zwei Kapla-Turbinen etwa 5 bis 10kw Strom aus der Wasserkraft der aufgestauten Werre.                 </Typography>
               </TextImage>
               <TextImage onClickImage={() => handleOpen("zweite", "a")} imageSRC={History3Picture}>
                 <Typography variant="h2">Die damalige Produktion</Typography>
                 <Typography>
-                  Die alte herrschaftlichen Mühle, sowie die neue Mühle Altrogge, haben bis zu dem Brand Mehl produziert. Altrogge hat bis 1993 120 Tonnen Mehl pro Tag hergestellt und etwa ab den Jahr 1950 wurden die Nachprodukte zu Futtermittel verarbeitet. Später hat Altrogge ausschließlich Spezialfutter für Labortiere hergestellt.
-                </Typography>
+                  Die alte herrschaftlichen Mühle, sowie die neue Mühle Altrogge, haben bis zu dem Brand Mehl produziert. Bis 1993 wurden ca. 120 Tonnen Getreide pro Tag verarbeitet. Ab dem Jahr 1950 wurden vor allem die Nachprodukte des Getreides zu Futtermitteln verarbeitet. Später produzierte die Mühle Altrogge ausschließlich Spezialfutter für Labortiere.                 </Typography>
               </TextImage>
             </Section>
           </Grid>
@@ -152,18 +150,18 @@ const IndexPage = () => {
           <TextImage imageSRC={Technology1Picture}>
             <Typography variant="h2">Damals und heute</Typography>
             <Typography>
-              Die herrschaftliche Mühle und die Mühle Altrogge wurde damals am Wasser gebaut, um die Maschinen durch Zahnrändern anzutreiben, da es damals kein Strom gab. Nachdem der Strom existierte, hat Altrogge beschlossen die Mühle durch Turbinen elektrisch anzutreiben. Um dies zu erreichen, wurde vor den Turbinen Staustufen errichtet, um das Wasser anzustauen, sodass es durch das sogenannte Mühlengraben zu den Turbinen lief. Die Turbinen haben daraufhin, rein mechatronisch, die Maschinen abgetrieben.
-            </Typography>
+              Die herrschaftliche Mühle und die Mühle Altrogge wurde damals an der Werre gebaut, um die Kraft des Wassers zu nutzen und Maschinen durch Zahnränder anzutreiben. Strom wurde damals noch nicht verwendet. Als immer mehr Maschinen elektrischen Strom zum Antrieb verwendeten, beschloss Familie Altrogge auch ihre Mühle mit elektrischen Turbinen auszustatten. Hierzu wurde vor den Turbinen eine Staustufe genutzt, die das Wasser aufstaut und ein Gefälle erzeugt. Das aufgestaute Wasser wird bis heute durch den sogenannten Mühlengraben zu den Turbinen geleitet. Die Turbinen werden durch die Wasserkraft angetrieben und erzeugen elektrischen Strom.             </Typography>
           </TextImage>
           <TextImage onClickImage={() => handleOpen("dritte", "s")} imageSRC={Technology2Picture} imageRight>
-            <Typography variant="h2">Die Kapla Turbine</Typography>
+            <Typography variant="h2">Die Kaplan-Turbine</Typography>
             <Typography>
-              Die Mühle Altrogge ist ein Laufwasserkraftwerk, aber ein kleines. Die verwendete Turbine zur Strom Gewinnung ist die Kapla-Turbine. Sie wurde in der Mühle vertikal verbaut, somit lag sie über dem Wasserzulauf. Das ist wichtig, da die Leistung der Turbine von der Wassermenge und der Fallhöhe abhängig ist. Oberhalb der Turbine war ein sogenannter „Drehstrom“ Generator, der dazu diente, den Strom sicher zum Generator zu übertagen. Heute noch produziert die Turbine noch Strom. Aber durch die geringe Wassermenge in der Werre kann nur noch ein Fünftel des Stroms der früher gewonnen wurde, erzeugt werden.          </Typography>
+              Die Mühle Altrogge ist ein Laufwasserkraftwerk, aber ein kleines. Die verwendete Turbine zur Strom Gewinnung ist die Kaplan-Turbine. Sie wurde in der Mühle vertikal verbaut, somit lag sie über dem Wasserzulauf. Das ist wichtig, da die Leistung der Turbine von der Wassermenge und der Fallhöhe abhängig ist. Oberhalb der Turbine war ein sogenannter „Drehstrom-Generator“, der dazu diente, den Strom sicher zum Generator zu übertagen. Heute noch produziert die Turbine Strom. In den letzten Jahren verringerte sich jedoch die durchschnittliche Wassermenge in der Werre (Klimawandel?), so dass heute nur noch ein Fünftel des Stroms gewonnen werden kann wie früher.             </Typography>
           </TextImage>
           <TextImage imageSRC={Technology3Picture}>
             <Typography variant="h2">Die Stromgewinnung</Typography>
             <Typography>
-              Die zwei Kapla Turbinen könnten damals bei optimalem Wasserstand etwa 50kw erzeugen, aber aufgrund des Klimawandels und den trockenen Sommer Tage führt die Werre weniger Wasser als früher. Deshalb produziert die Turbinen nur noch etwa 5 bis 10kw an Strom. Bei großen Wassermengen, z.B. beim Starkregen, wird die erste Turbine vollständig geöffnet. Reicht das nicht aus, wird auch die zweite Turbine geöffnet und wenn immer noch zu viel Wasser kommt, dann wird das Wasser in die kleine Werre geleitet, weil sonst ein Rückstau bei der Turbine gäbe. Bei den Turbinen gehen etwa 200l/s durch. Das Schwimmgut, vor den Turbinen, werden von einem Rechen herausgezogen.          </Typography>
+              Die zwei Kaplan-Turbinen könnten bei optimalem Wasserstand etwa 50kw elektrischen Strom erzeugen. Aufgrund des Klimawandels und der trockenen Sommer der letzten Jahre führt die Werre immer weniger Wasser als früher. Deshalb produziert die Turbinen heute nur noch etwa 5 bis 10kw an Strom. Bei großen Wassermengen, z.B. beim Starkregen, wird die erste Turbine vollständig geöffnet. Reicht das nicht aus, wird auch die zweite Turbine geöffnet. Wenn immer noch zu viel Wasser kommt, dann wird das überschüssige Wasser in die kleine Werre geleitet, um einen Rückstau mit Überflutungen zu verhindern. Pro Sekunde laufen etwa 200l Wasser durch die Turbinen. Das Schwimmgut, vor den Turbinen, werden von einem mechanischen Rechen in regelmäßigen Abständen herausgezogen.
+            </Typography>
           </TextImage>
         </Section>
         <Section id={"hydroelectric-power-station"}>
@@ -172,21 +170,18 @@ const IndexPage = () => {
           <TextImage onClickImage={() => handleOpen("vierte", "s")} imageSRC={Speicherkraftwerk} imageRight={false}>
             <Typography variant="h2">Speicherkraftwerk</Typography>
             <Typography>
-              Wenn Strom aus dem Speicherkraftwerk erzeugt werden soll, lässt man das Wasser aus dem Speicherbecken ab und führt es durch ein tiefergelegenes Turbinenbecken. Über die Bewegung
-              der Turbine entsteht dann Strom.
+              Wenn Strom mit einem Speicherkraftwerk erzeugt werden soll, lässt man das Wasser aus dem Speicherbecken ab und führt es durch ein tiefergelegenes Turbinenbecken. Über die Bewegung der Turbine entsteht dann der elektrische Strom.
             </Typography>
           </TextImage>
           <TextImage imageSRC={Laufwasserkraftwerk} imageRight>
             <Typography variant="h2">Laufwasserkraftwerk</Typography>
             <Typography>
-              Das Laufwasserkraftwerk nutzt künzliche Gefälle von den Wasserströmen, um so Strom zu erzeugen. Das Wasser fließt mit einer hohen Geschwindigkeit durch die Turbiene des Wasserkraftwerks. Sie bringt den Generator zum Laufen, weshalb Strom erzeugt wird.
-            </Typography>
+              Das Laufwasserkraftwerk nutzt künstliche Gefälle von Wasserströmen, um so Strom zu erzeugen. Das Wasser fließt dabei mit einer hohen Geschwindigkeit durch die Turbine des Wasserkraftwerks. Sie treibt den Generator zum Laufen an und erzeugt so elektrischen Strom.             </Typography>
           </TextImage>
           <TextImage imageSRC={Pumpenspeicherkraftwerk}>
             <Typography variant="h2">Pumpenspeicherkraftwerk</Typography>
             <Typography>
-              Bei einem Pumpenspeicherkraftwerk wird mithilfe von elektrischer Energie Wasser in das Oberebecken vom Kraftwerk gepumt. Damit man diese Energie zurück gewinnen kann, lässt man mit der hilfe einer Turbine das Wasser in das unterer Becken abfließen. Sobald das Wasser runter fließt wird die Turbine angetrieben und es entsteht elektrischer Strom. Bei bedarf kann das Pumpenkraftwerk sehr schnell Energie erzeugen, weil es keinen solangen Vorlauf braucht.
-            </Typography>
+              Bei einem Pumpenspeicherkraftwerk wird mithilfe von elektrischer Energie zunächst Wasser in höhergelegene Becken vom Kraftwerk gepumpt. Damit man diese Energie zurückgewinnen kann, lässt man irgendwann das Wasser wieder durch Rohrleitungen abfließen, in denen Turbinen angetrieben werden. Sobald das Wasser runter fließt, wird die Turbine in Bewegung gesetzt und es entsteht wieder elektrischer Strom. Der Vorteil eines Pumpspeicherkraftwerkes ist, dass es sehr schnell Energie erzeugen wenn es benötigt wird.             </Typography>
           </TextImage>
         </Section>
         <Section dark={true} id={"environment"}>
@@ -195,14 +190,12 @@ const IndexPage = () => {
           <TextImage imageSRC={Environment1Picture} imageRight={false}>
             <Typography variant="h2">Welche ökologischen Probleme bereiten Wasserkraftwerke?</Typography>
             <Typography>
-              Jedes Wasserkraftwerk kann mehr oder weniger der Natur schaden. Die Kraftwerke verändert nämlich das Ökosystem eines Flusses, manchmal aber auch einer ganzen Landschaft. Die dafür nötigen Stauwerke unterbrechen die Durchgängigkeit, für die Wasserlebewessen jeglicher Art und meistens hindert, es Fischen flussaufwärts zu schwimmen. Die Stauwerke blockieren das Geschiebe im Flussbett, also von Sand und Kies. Aber auch die Fischaufstiege funktionieren nur selten und werden schlecht gewartet und die Turbinen enden oft tödlich für die Tiere.
-            </Typography>
+              Jedes Wasserkraftwerk kann mehr oder weniger der Natur schaden. Die Kraftwerke verändert nämlich das Ökosystem eines Flusses, manchmal aber auch einer ganzen Landschaft. Die für die Kraftwerke nötigen Stauwerke unterbrechen die Durchgängigkeit der Flüsse. Für Fischen und Wasserlebewesen jeglicher Art gibt es nun kaum noch eine Möglichkeit  flussaufwärts zu schwimmen. Außerdem blockieren die Stauwerke den Transport von Sand und Kies im Flussbett. Künstlich gebaute Fischaufstiege funktionieren nur selten gut und werden oft schlecht gewartet. Gelangen Tiere in die Turbinen, so bedeutet das oft den Tod der Tiere.             </Typography>
           </TextImage>
           <TextImage onClickImage={() => handleOpen("fünfte", "e")} imageSRC={Environment2Picture} imageRight>
             <Typography variant="h2">Was macht die Mühle Altrogge mit der Qualität der Werre?</Typography>
             <Typography>
-              Das kleine Wasserkraftwerk der Mühle Altrogge bildet ein Stau im Wasser, der aber kein See ist. Das Wasser kann nur langsam weiter fließen. Somit sammelt sich Schmutz an und es kommt zu einem Verlust der Artenvielfalt in der Werre.
-            </Typography>
+              Das kleine Wasserkraftwerk der Mühle Altrogge bildet über mehrere hundert Meter ein Stau im Wasser, der aber kein echter See ist. Da Wasser hier nur langsam weiter fließen kann, sammelt sich Schmutz und Schlamm an. Der reduzierte Sauerstoffgehalt des Wassers und der verschlammte Untergrund führen zu einem Verlust der Artenvielfalt in der Werre.             </Typography>
           </TextImage>
         </Section>
         <Section id={"galerie"}>
@@ -210,25 +203,27 @@ const IndexPage = () => {
           <Divider />
           <ResponsiveImageList>
             {itemData.map((item) => (
-              <ImageListItem key={item.img}>
-                <img
-                  src={`${item.img}?w=248&fit=crop&auto=format`}
-                  srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                  alt={item.title}
-                  loading="lazy"
-                />
-                <ImageListItemBar
-                  title={item.title}
-                  actionIcon={
-                    <IconButton
-                      sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
-                      aria-label={`info about ${item.title}`}
-                    >
-                    </IconButton>
-                  }
-                />
-              </ImageListItem>
-            ))}
+                <ImageListItem onClick={() => {
+                  if(item.lennard) handleOpen(item.lennard.which, item.lennard.letter)
+                }} key={item.img}>
+                  <img
+                    src={`${item.img}?w=248&fit=crop&auto=format`}
+                    srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                    alt={item.title}
+                    loading="lazy"
+                  />
+                  <ImageListItemBar
+                    title={item.title}
+                    actionIcon={
+                      <IconButton
+                        sx={{ color: 'rgba(255, 255, 255, 0.54)' }}
+                        aria-label={`info about ${item.title}`}
+                      >
+                      </IconButton>
+                    }
+                  />
+                </ImageListItem>
+              ))}
           </ResponsiveImageList>
         </Section>
       </MotionDiv>

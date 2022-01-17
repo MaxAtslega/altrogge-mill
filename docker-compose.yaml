@@ -1,0 +1,7 @@
+version: "3"
+services:
+  muehle-altrogge:
+    build: ./
+    container_name: "muehle-altrogge"
+    ports:
+      - "3001:9000"
