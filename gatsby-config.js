@@ -16,7 +16,6 @@ module.exports = {
     "gatsby-plugin-image",
     'gatsby-plugin-top-layout',
     'gatsby-plugin-mui-emotion',
-    "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-plugin-typescript",
     `gatsby-transformer-remark`,
