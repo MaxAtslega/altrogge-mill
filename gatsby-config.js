@@ -1,6 +1,5 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "http://localhost:8000/",
     title: "Mühle Altrogge",
     author: {
       name: 'Max Atslega',

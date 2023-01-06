@@ -1,25 +1,21 @@
 import React from "react"
-import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 
 
 const SEO = ({ title, description, image, article }: { title: string, description: string, image: string, article: string }) => {
-  const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
   const {
     defaultTitle,
     defaultDescription,
-    siteUrl,
     defaultImage,
     siteLanguage
   } = site.siteMetadata
 
   const seo = {
     title: title || defaultTitle,
-    siteLanguage: title || defaultTitle,
+    siteLanguage: title || "de",
     description: description || defaultDescription,
-    image: `${siteUrl}${image || defaultImage}`,
-    url: `${siteUrl}${pathname}`,
+    image: `${image || defaultImage}`,
   }
   return (
     <>
@@ -27,7 +23,6 @@ const SEO = ({ title, description, image, article }: { title: string, descriptio
       <html lang={siteLanguage} />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
-      {seo.url && <meta property="og:url" content={seo.url} />}
       {(article ? true : null) && <meta property="og:type" content="article" />}
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (
@@ -76,7 +71,6 @@ const query = graphql`
         defaultTitle: title
         defaultDescription: description
         siteLanguage
-        siteUrl
         defaultImage: image
       }
     }
