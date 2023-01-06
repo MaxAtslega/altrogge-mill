@@ -1,34 +1,28 @@
 import React from "react"
-import { Helmet } from "react-helmet"
-import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 
 
 const SEO = ({ title, description, image, article }: { title: string, description: string, image: string, article: string }) => {
-  const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
   const {
     defaultTitle,
-    titleTemplate,
     defaultDescription,
-    siteUrl,
     defaultImage,
     siteLanguage
   } = site.siteMetadata
 
   const seo = {
     title: title || defaultTitle,
-    siteLanguage: title || defaultTitle,
+    siteLanguage: title || "de",
     description: description || defaultDescription,
-    image: `${siteUrl}${image || defaultImage}`,
-    url: `${siteUrl}${pathname}`,
+    image: `${image || defaultImage}`,
   }
   return (
-    <Helmet title={seo.title} titleTemplate={titleTemplate}>
+    <>
+      <title>{seo.title}</title>
       <html lang={siteLanguage} />
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
-      {seo.url && <meta property="og:url" content={seo.url} />}
       {(article ? true : null) && <meta property="og:type" content="article" />}
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (
@@ -59,8 +53,7 @@ const SEO = ({ title, description, image, article }: { title: string, descriptio
       <meta name="msapplication-TileColor" content="#ffffff"/>
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
       <meta name="theme-color" content="#ffffff" />
-
-    </Helmet>
+    </>
   )
 }
 export default SEO
@@ -78,7 +71,6 @@ const query = graphql`
         defaultTitle: title
         defaultDescription: description
         siteLanguage
-        siteUrl
         defaultImage: image
       }
     }

@@ -1,6 +1,5 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "http://localhost:8000/",
     title: "Mühle Altrogge",
     author: {
       name: 'Max Atslega',
@@ -16,7 +15,6 @@ module.exports = {
     "gatsby-plugin-image",
     'gatsby-plugin-top-layout',
     'gatsby-plugin-mui-emotion',
-    "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-plugin-typescript",
     `gatsby-transformer-remark`,

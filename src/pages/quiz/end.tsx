@@ -7,14 +7,13 @@ import MapVertical from "@images/map_vertical.png";
 import MapHorizontal from "@images/map_horizontal.png";
 import SEO from "@components/seo";
 import MotionDiv from "@components/MotionDiv";
-import quiz from "../../../config/quiz.json";
+import quiz from "../../config/quiz.json";
 
 const QuizEnd = (props: any) => {
   const numberOfWrongAnswers: number = props.location.state?.numberOfWrongAnswers ? props.location.state.numberOfWrongAnswers : 0;
 
   return (
     <Main hero={false}>
-      <SEO title={"Quiz - Mühle Altrogge"}/>
       <Grid container spacing={3} alignItems="stretch">
         <Grid item xs={12} sm={2}>
           <img style={{display: "block", maxWidth: "100%", height: "auto", padding: "20px"}} src={LennardQuiz} alt={"Placeholder"} />
@@ -46,5 +45,7 @@ const QuizEnd = (props: any) => {
     </Main>
   )
 }
+
+export const Head = () => (<SEO title={"Quiz - Mühle Altrogge"}/>)
 
 export default QuizEnd

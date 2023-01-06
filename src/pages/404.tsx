@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import Main from "@components/Main";
+import SEO from "@components/seo";
 
 // styles
 const pageStyles = {
@@ -15,33 +16,19 @@ const headingStyles = {
 }
 
 const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
+  marginBottom: 32,
 }
 
-// markup
 const NotFoundPage = () => {
   return (
     <Main hero={false} style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br/>
-        <Link to="/">Go home</Link>.
-      </p>
+      <h1 style={headingStyles}>Die Seite wurde nicht gefunden</h1>
+      <p style={paragraphStyles}>Die von Ihnen gesuchte Seite konnte leider nicht gefunden werden.</p>
+      <p style={paragraphStyles}>Bitte gehen Sie auf die <Link to="/">Startseite</Link>.</p>
     </Main>
   )
 }
+
+export const Head = () => (<SEO title={"404 - Mühle Altrogge"}/>)
 
 export default NotFoundPage

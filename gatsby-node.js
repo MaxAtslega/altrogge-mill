@@ -1,6 +1,6 @@
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const path = require("path")
-const quiz = require("./config/quiz.json")
+const quiz = require("./src/config/quiz.json")
 
 exports.onCreateWebpackConfig = ({ actions }) => {
     actions.setWebpackConfig({

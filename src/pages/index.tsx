@@ -61,13 +61,13 @@ const itemData = [
     title: 'Erklärung der Technik',
   },
   {
+    img: Gallery5,
+    title: 'Generator + Schwungrad',
+  },
+  {
     img: Gallery4,
     title: 'Schwungrad',
     lennard: {which: "letzte", letter: "r"}
-  },
-  {
-    img: Gallery5,
-    title: 'Generator + Schwungrad',
   },
   {
     img: Gallery6,
@@ -107,7 +107,6 @@ const IndexPage = () => {
 
   return (
     <Main hero={true}>
-      <SEO title={"Start - Mühle Altrogge"}/>
       <MotionDiv>
         <Grid container spacing={3} alignItems="stretch">
           <Grid item xs={12} sm={2}>
@@ -246,5 +245,6 @@ const IndexPage = () => {
     </Main>
   )
 }
+export const Head = () => (<SEO title={"Start - Mühle Altrogge"}/>)
 
 export default IndexPage
