@@ -61,13 +61,13 @@ const itemData = [
     title: 'Erklärung der Technik',
   },
   {
+    img: Gallery5,
+    title: 'Generator + Schwungrad',
+  },
+  {
     img: Gallery4,
     title: 'Schwungrad',
     lennard: {which: "letzte", letter: "r"}
-  },
-  {
-    img: Gallery5,
-    title: 'Generator + Schwungrad',
   },
   {
     img: Gallery6,
