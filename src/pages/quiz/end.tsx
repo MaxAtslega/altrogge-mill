@@ -14,7 +14,6 @@ const QuizEnd = (props: any) => {
 
   return (
     <Main hero={false}>
-      <SEO title={"Quiz - Mühle Altrogge"}/>
       <Grid container spacing={3} alignItems="stretch">
         <Grid item xs={12} sm={2}>
           <img style={{display: "block", maxWidth: "100%", height: "auto", padding: "20px"}} src={LennardQuiz} alt={"Placeholder"} />
@@ -46,5 +45,7 @@ const QuizEnd = (props: any) => {
     </Main>
   )
 }
+
+export const Head = () => (<SEO title={"Quiz - Mühle Altrogge"}/>)
 
 export default QuizEnd

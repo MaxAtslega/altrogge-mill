@@ -107,7 +107,6 @@ const IndexPage = () => {
 
   return (
     <Main hero={true}>
-      <SEO title={"Start - Mühle Altrogge"}/>
       <MotionDiv>
         <Grid container spacing={3} alignItems="stretch">
           <Grid item xs={12} sm={2}>
@@ -246,5 +245,6 @@ const IndexPage = () => {
     </Main>
   )
 }
+export const Head = () => (<SEO title={"Start - Mühle Altrogge"}/>)
 
 export default IndexPage

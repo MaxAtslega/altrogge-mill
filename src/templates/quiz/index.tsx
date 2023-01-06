@@ -1,26 +1,16 @@
 import * as React from "react"
 import Main from "@components/Main";
-import { navigate } from 'gatsby'
-import {
-  Button,
-  Checkbox,
-  Container, FormControl,
-  FormControlLabel,
-  FormGroup, FormLabel,
-  Grid,
-  Radio, RadioGroup,
-  TextField,
-  Typography
-} from "@mui/material";
+import {navigate} from 'gatsby'
+import {Button, Container, FormControl, FormControlLabel, Grid, Radio, RadioGroup, Typography} from "@mui/material";
 import LennardQuiz from "@images/lennard_quiz.png";
 import TextVideo from "@components/TextVideo";
 import MapVertical from "@images/map_vertical.png";
 import MapHorizontal from "@images/map_horizontal.png";
 import {green, red} from "@mui/material/colors";
-import SEO from "@components/seo";
 import MotionDiv from "@components/MotionDiv";
+import SEO from "@components/seo";
 
-const QuizByID = (props: any) => {
+const QuizByID = (props: { pageContext: any, location: any }) => {
   const quiz = props.pageContext;
   const numberOfWrongAnswers: number = props.location.state?.numberOfWrongAnswers ? props.location.state.numberOfWrongAnswers : 0;
   const [selectedValue, setSelectedValue] = React.useState('');
@@ -49,7 +39,6 @@ const QuizByID = (props: any) => {
 
     return (
       <Main hero={false}>
-        <SEO title={"Quiz - Mühle Altrogge"}/>
           <Grid container spacing={3} alignItems="stretch">
             <Grid item xs={12} sm={2}>
               <img style={{display: "block", maxWidth: "100%", height: "auto", padding: "20px"}} src={LennardQuiz} alt={"Placeholder"} />
@@ -82,7 +71,9 @@ const QuizByID = (props: any) => {
           </Grid>
       </Main>
     )
-
 }
+
+export const Head = () => (<SEO title={"Quiz - Mühle Altrogge"}/>)
+
 
 export default QuizByID
