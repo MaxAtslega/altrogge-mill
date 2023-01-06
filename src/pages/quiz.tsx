@@ -19,7 +19,7 @@ const Quiz = () => {
 
   const handleCheck = () => {
     if(getCheckValue.toUpperCase() === "WASSER") {
-      setMessage({correct: "Du hast alle Mützen von Lennard Lachs gefunden und du hast die Suche erfolgreich absolviert. Das Wasser hat das Mühlrad angetrieben und somit könnten die Maschinen für die Produktion produzieren.", wrong: null})
+      setMessage({correct: "Du hast alle Mützen von Lennard Lachs gefunden und du hast die Suche erfolgreich absolviert. Das Wasser in der Werre hat das Mühlrad angetrieben und somit könnten die Maschinen für die Produktion produzieren.", wrong: null})
     }else{
       setMessage({
         correct: null,
