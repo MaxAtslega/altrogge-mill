@@ -20,7 +20,7 @@
     "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.11.3",
-    "framer-motion": "^8.2.4",
+    "framer-motion": "^9.0.0",
     "gatsby": "^5.3.3",
     "gatsby-plugin-image": "^3.3.2",
     "gatsby-plugin-sass": "^6.3.1",
