@@ -1,54 +1,9 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# MuehleAltrogge
+The "MuehleAltrogge" project was created during my secondary school years as part of my coursework. The aim of the project was to create a website to report on the Altrogge Mill and document its history and significance for the region. The Altrogge Mill is a historic water mill that was built in the 19th century and is located in my home region. The mill is an important part of the local history and culture and has played a significant role in supplying the surrounding communities with flour and other agricultural products.
 
-## 🚀 Quick start
+The "MuehleAltrogge" website contains a wealth of information about the history and significance of the mill. Detailed information is provided on the various aspects of the mill, including its function, architecture, and technology. The website also tells stories about the mill and its owners. The design of the website is simple and user-friendly to ensure that visitors can easily access the information. The website also includes a photo gallery that provides a visual representation of the mill and showcases its beauty and significance for the region.
 
-1.  **Create a Gatsby site.**
+The website also features a quiz that tests visitors' knowledge about the Altrogge Mill. The quiz includes multiple choice questions about the mill's history, architecture, and technology. Visitors can take the quiz to challenge themselves and see how much they know about the mill. The quiz is designed to be fun and educational and encourages visitors to learn more about the mill while testing their knowledge. The quiz also provides a way for visitors to engage with the website and learn more about the mill in an interactive and engaging way.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+The "MuehleAltrogge" project not only helped to improve my web development skills but also helped to raise awareness of the mill and its history in the region. The website has helped to increase interest and appreciation for the mill and contributed to its recognition as an important part of local history and culture. Overall, the "MuehleAltrogge" project was a valuable learning experience that combined technology, history, and culture to create an informative and engaging website that promotes awareness of the Altrogge Mill and its significance in the region.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
-
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
