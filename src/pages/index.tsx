@@ -110,13 +110,13 @@ const IndexPage = () => {
       <MotionDiv>
         <Grid container spacing={3} alignItems="stretch">
           <Grid item xs={12} sm={2}>
-            <img style={{display: "block", maxWidth: "100%", height: "auto", padding: "20px"}} src={Lennard} alt={"Placeholder"} />
+            <img style={{display: "block", maxWidth: "100%", height: "auto", padding: "20px"}} src={Lennard} alt={"Lennard"} />
           </Grid>
           <Grid item xs={12} sm={8}>
             <Container>
               <QuizButton variant="contained" onClick={() => navigate('/quiz')}>Zum Quiz</QuizButton>
             </Container>
-            <Section id={"about_me"}>
+            <Section id={"history"}>
               <Typography variant="h1">Die Geschichte</Typography>
               <Divider />
               <TextImage imageSRC={History1Picture}>
@@ -139,7 +139,7 @@ const IndexPage = () => {
           <Grid item xs={12} sm={2}>
             <picture>
               <source media="(min-width: 1024px)" srcSet={MapVertical} />
-              <img style={{display: "block", maxWidth: "100%", height: "auto", padding: "20px"}} src={MapHorizontal} alt={"Placeholder"} />
+              <img style={{display: "block", maxWidth: "100%", height: "auto", padding: "20px"}} src={MapHorizontal} alt={"Karte"} />
             </picture>
           </Grid>
         </Grid>
@@ -236,7 +236,7 @@ const IndexPage = () => {
           <Typography pb={"10px"} variant="h1">
             Glückwunsch!
           </Typography>
-          <img src={HeadImage} alt={"Placeholder"}/>
+          <img src={HeadImage} alt={"Lennard Lachs"}/>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Du hast die {getHide.which} Mütze von Lennard Lachs gefunden! Der {getHide.which} Buchstabe lautet: {getHide.letter}<br/><br/>Wenn du alle 6 Buchstaben gefunden hast, gehe zum Quiz und überprüfe dein Lösungswort.
           </Typography>
