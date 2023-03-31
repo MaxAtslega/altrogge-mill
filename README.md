@@ -1,4 +1,6 @@
 # MuehleAltrogge
+<img width="100%" src="https://github.com/MaxAtslega/MuehleAltrogge/blob/main/Screenshot.png" alt="Mühle Altrogge">
+
 The "MuehleAltrogge" project was created during my secondary school years as part of my coursework. The aim of the project was to create a website to report on the Altrogge Mill and document its history and significance for the region. The Altrogge Mill is a historic water mill that was built in the 19th century and is located in my home region. The mill is an important part of the local history and culture and has played a significant role in supplying the surrounding communities with flour and other agricultural products.
 
 The "MuehleAltrogge" website contains a wealth of information about the history and significance of the mill. Detailed information is provided on the various aspects of the mill, including its function, architecture, and technology. The website also tells stories about the mill and its owners. The design of the website is simple and user-friendly to ensure that visitors can easily access the information. The website also includes a photo gallery that provides a visual representation of the mill and showcases its beauty and significance for the region.
