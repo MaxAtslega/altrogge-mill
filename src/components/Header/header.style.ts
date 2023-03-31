@@ -42,7 +42,7 @@ export const Navigator = styled("nav")({
 export const WaveSVG = styled("svg")({
   position: "absolute",
   width: "100%",
-  bottom: 0,
+  bottom: '-1px',
   left: 0,
 })
 

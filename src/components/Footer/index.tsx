@@ -6,7 +6,7 @@ import { FooterContainer } from "@components/Footer/Footer.style"
 export default function Footer() {
   return (
     <footer>
-      <svg style={{ display: "block" }} viewBox="0 0 2619 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg style={{ display: "block", marginBottom: '-1px' }} viewBox="0 0 2619 256" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M0 102.4L145.5 110.88C291 120 582 136 873 145.12C1164 153.6 1455 153.6 1746 128C2037 102.4 2328 51.2 2473.5 25.6L2619 0V256H2473.5C2328 256 2037 256 1746 256C1455 256 1164 256 873 256C582 256 291 256 145.5 256H0V102.4Z"
           fill="#7DBA67"
