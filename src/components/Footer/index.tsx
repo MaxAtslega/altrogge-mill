@@ -31,7 +31,7 @@ export default function Footer() {
               <Link
                 color={"#ffffff"}
                 sx={{ "&:hover": { color: "#4b4b4b" } }}
-                href="https://github.com/MaxAtslega/MuehleAltrogge"
+                href="https://github.com/MaxAtslega/altrogge-mill"
               >
                 Source Code
               </Link>
